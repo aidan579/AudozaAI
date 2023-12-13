@@ -1,0 +1,153 @@
+/* This style sheet was created by Aidan Dyga */
+/* Color Definitions */
+:root {
+    --gray: #b0b0b0;
+    --white: #ffffff;
+    --blue: #4A96B6;
+    --black: #000000;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--gray);
+    padding: 0;
+    font-family: Monaco, monospace;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+}
+
+#particles-js {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Header Container */
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--gray);
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--white);
+    padding: 1em;
+}
+
+/* Header Image */
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Text */
+header span {
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1em;
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+/* Main Content Area */
+main {
+    margin-top: 2em;
+    border-radius: 2em;
+    text-align: center;
+}
+
+
+ /* Input text */
+main:hover {
+    border-bottom: 5px solid var(--blue);
+}
+
+
+textarea {
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 100px;
+    width: 80%;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--white);
+    resize: none;
+    font-size: 16px;
+    outline: none !important;
+}
+
+button {
+    padding: 5px;
+    background-color: var(--white);
+    color: var(--white);
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    bottom: 28px;
+}
+
+button:hover {
+    transform: rotate(20deg);
+}
+
+.input {
+    background-color: var(--white);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2em;
+    color: var(--blue);
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border: 1px solid var(--gray);
+    background-color: var(--gray);
+    border-top: 1px solid var(--white);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: var(--gray);
+    }
+}
+ 
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: var(--gray);
+    }
+}
+ 
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: var(--gray);
+    }
+}
+ 
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: var(--gray);
+    }
+}
+ 
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    body {
+        background-color: var(--gray);
+    }
+}
